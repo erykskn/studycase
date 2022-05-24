@@ -1,0 +1,1311 @@
+{
+	"info": {
+		"_postman_id": "21bea0b1-3f4f-43fa-b346-6ef108da4084",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"Ali1gmail.com\",\r\n    \"password\" : \"deneme123456\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"Ali1gmail.com\",\r\n    \"password\" : \"deneme123456\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/auth/token",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:54:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGkxZ21haWwuY29tIiwiZXhwIjoxNjUzNDM2NDQyLCJpYXQiOjE2NTM0MTg0NDJ9.8lFPNlf-zIpaLlDYygzKL9aUja9nbj5w0Igi5BD1HADAIeffROY-ykOSjaGXS5I7bcGnpZMjMAoIUp-zBKqNxQ\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New Customer Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"example\",\r\n  \"surname\": \"string\",\r\n  \"email\": \"exampleq@gmail.com\",\r\n  \"password\": \"string12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Customer Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"example\",\r\n  \"surname\": \"string\",\r\n  \"email\": \"exampleq@gmail.com\",\r\n  \"password\": \"string12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:54:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"BAD_REQUEST\",\n    \"message\": \"Email already is used.\",\n    \"errors\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "New Customer Create Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"example\",\r\n  \"surname\": \"string\",\r\n  \"email\": \"exampleq@gmail.com\",\r\n  \"password\": \"string12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Customer Create Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"example\",\r\n  \"surname\": \"string\",\r\n  \"email\": \"exampleqww@gmail.com\",\r\n  \"password\": \"string12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Location",
+							"value": "/customer/628d29e977f075577574d882"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:54:33 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Customer is created\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Create New Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGkxZ21haWwuY29tIiwiZXhwIjoxNjUzNDM0OTM4LCJpYXQiOjE2NTM0MTY5Mzh9.ksyQaC2c1oqEKBd1zAiOIn6G3Z5fKVVCk2HH4t1AMudry1wUX8LUKYQVSD_1T0kP4lEccBs4F5zEKAM02e-kYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"string\",\r\n  \"price\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create New Book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"string\",\r\n  \"price\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/book/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:54:43 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"628d29f377f075577574d883\",\n    \"createdAt\": \"2022-05-24T18:54:43.222+00:00\",\n    \"updatedAt\": null,\n    \"name\": \"string\",\n    \"stock\": null,\n    \"onSale\": false,\n    \"price\": 100\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Stock",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGkxZ21haWwuY29tIiwiZXhwIjoxNjUzNDM0OTM4LCJpYXQiOjE2NTM0MTY5Mzh9.ksyQaC2c1oqEKBd1zAiOIn6G3Z5fKVVCk2HH4t1AMudry1wUX8LUKYQVSD_1T0kP4lEccBs4F5zEKAM02e-kYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/book/updateStockBy/628d231677f075577574d85e/quantity/55",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						"updateStockBy",
+						"628d231677f075577574d85e",
+						"quantity",
+						"55"
+					],
+					"query": [
+						{
+							"key": "bookId",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Stock",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/book/updateStockBy/628d231677f075577574d85e/quantity/55",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								"updateStockBy",
+								"628d231677f075577574d85e",
+								"quantity",
+								"55"
+							],
+							"query": [
+								{
+									"key": "bookId",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:54:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"628d231677f075577574d85f\",\n    \"createdAt\": \"2022-05-24T18:25:26.508+00:00\",\n    \"updatedAt\": null,\n    \"bookDto\": null,\n    \"version\": 3,\n    \"quantity\": 55\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Orders By Customer ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGkxZ21haWwuY29tIiwiZXhwIjoxNjUzNDM0OTM4LCJpYXQiOjE2NTM0MTY5Mzh9.ksyQaC2c1oqEKBd1zAiOIn6G3Z5fKVVCk2HH4t1AMudry1wUX8LUKYQVSD_1T0kP4lEccBs4F5zEKAM02e-kYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/customer/getAllOrdersByCustomerId/628d231677f075577574d85d",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customer",
+						"getAllOrdersByCustomerId",
+						"628d231677f075577574d85d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGkxZ21haWwuY29tIiwiZXhwIjoxNjUzNDM0OTM4LCJpYXQiOjE2NTM0MTY5Mzh9.ksyQaC2c1oqEKBd1zAiOIn6G3Z5fKVVCk2HH4t1AMudry1wUX8LUKYQVSD_1T0kP4lEccBs4F5zEKAM02e-kYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/order/orderById/628d231677f075577574d861",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"orderById",
+						"628d231677f075577574d861"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Order By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/order/orderById/628d231677f075577574d861",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"orderById",
+								"628d231677f075577574d861"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:55:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"628d231677f075577574d861\",\n    \"createdAt\": \"2022-05-24T18:25:26.530+00:00\",\n    \"updatedAt\": null,\n    \"orderItemDtos\": null,\n    \"customerDto\": null,\n    \"orderStatus\": \"ACTIVE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Orders Interval Two Dates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGkxZ21haWwuY29tIiwiZXhwIjoxNjUzNDM0OTM4LCJpYXQiOjE2NTM0MTY5Mzh9.ksyQaC2c1oqEKBd1zAiOIn6G3Z5fKVVCk2HH4t1AMudry1wUX8LUKYQVSD_1T0kP4lEccBs4F5zEKAM02e-kYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/order/listOfOrderIntervalTwoDate/2022-01-01/2022-11-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"listOfOrderIntervalTwoDate",
+						"2022-01-01",
+						"2022-11-01"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Orders Interval Two Dates",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/order/listOfOrderIntervalTwoDate/2022-01-01/2022-11-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"listOfOrderIntervalTwoDate",
+								"2022-01-01",
+								"2022-11-01"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:55:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"628d231677f075577574d861\",\n        \"createdAt\": \"2022-05-24T18:25:26.530+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231677f075577574d866\",\n        \"createdAt\": \"2022-05-24T18:25:26.666+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231677f075577574d86b\",\n        \"createdAt\": \"2022-05-24T18:25:26.783+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231677f075577574d870\",\n        \"createdAt\": \"2022-05-24T18:25:26.904+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231777f075577574d875\",\n        \"createdAt\": \"2022-05-24T18:25:27.017+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231777f075577574d87a\",\n        \"createdAt\": \"2022-05-24T18:25:27.134+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231777f075577574d87f\",\n        \"createdAt\": \"2022-05-24T18:25:27.247+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Statistics By Customer ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBbGkxZ21haWwuY29tIiwiZXhwIjoxNjUzNDM0OTM4LCJpYXQiOjE2NTM0MTY5Mzh9.ksyQaC2c1oqEKBd1zAiOIn6G3Z5fKVVCk2HH4t1AMudry1wUX8LUKYQVSD_1T0kP4lEccBs4F5zEKAM02e-kYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/statistic/getMonthlyStatisticByCustomerId/628d231677f075577574d85d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"statistic",
+						"getMonthlyStatisticByCustomerId",
+						"628d231677f075577574d85d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Statistics By Customer ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/statistic/getMonthlyStatisticByCustomerId/628d231677f075577574d85d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"statistic",
+								"getMonthlyStatisticByCustomerId",
+								"628d231677f075577574d85d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:55:10 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"montlyStaticticDtoList\": [\n        {\n            \"month\": \"May\",\n            \"totalOrderCount\": 1,\n            \"totalBookCount\": 1,\n            \"totalPurchasedAmount\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/statistic/getMonthlyStatisticByCustomerId/628a4f6e6a0043481b49710a",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlcmF5NSIsImV4cCI6MTY1MzI0OTQ5OCwiaWF0IjoxNjUzMjMxNDk4fQ.pY5WcUbsG1jWOa1kHfGN0-u86sRxaLbdR34jbIfP6NQeIFC0rX906LzpkZZkFqbI938wdJxFNDj_FviZG4MwnA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/statistic/getMonthlyStatisticByCustomerId/628a4f6e6a0043481b49710a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"statistic",
+						"getMonthlyStatisticByCustomerId",
+						"628a4f6e6a0043481b49710a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/statistic/getMonthlyStatisticByCustomerId/628a4f6e6a0043481b49710a",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/statistic/getMonthlyStatisticByCustomerId/628d231677f075577574d85d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"statistic",
+								"getMonthlyStatisticByCustomerId",
+								"628d231677f075577574d85d"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:57:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"montlyStaticticDtoList\": [\n        {\n            \"month\": \"May\",\n            \"totalOrderCount\": 1,\n            \"totalBookCount\": 1,\n            \"totalPurchasedAmount\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/order/listOfOrderIntervalTwoDate/2022-01-01/2022-11-01",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlcmF5IiwiZXhwIjoxNjUyOTgyOTcwLCJpYXQiOjE2NTI5NjQ5NzB9.nSFhVJSxuwqwLmZBQtJ1eZ4T0g8hhr04qpdxTEiXRo7q5Y2tiNCV6ECuv2m_UExbP8qcgKCwjvBY0qpaT_qhEQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/order/listOfOrderIntervalTwoDate/2022-01-01/2022-11-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"listOfOrderIntervalTwoDate",
+						"2022-01-01",
+						"2022-11-01"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/order/listOfOrderIntervalTwoDate/2022-01-01/2022-11-01",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/order/listOfOrderIntervalTwoDate/2022-01-01/2022-11-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"order",
+								"listOfOrderIntervalTwoDate",
+								"2022-01-01",
+								"2022-11-01"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:57:29 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"628d231677f075577574d861\",\n        \"createdAt\": \"2022-05-24T18:25:26.530+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231677f075577574d866\",\n        \"createdAt\": \"2022-05-24T18:25:26.666+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231677f075577574d86b\",\n        \"createdAt\": \"2022-05-24T18:25:26.783+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231677f075577574d870\",\n        \"createdAt\": \"2022-05-24T18:25:26.904+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231777f075577574d875\",\n        \"createdAt\": \"2022-05-24T18:25:27.017+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231777f075577574d87a\",\n        \"createdAt\": \"2022-05-24T18:25:27.134+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    },\n    {\n        \"id\": \"628d231777f075577574d87f\",\n        \"createdAt\": \"2022-05-24T18:25:27.247+00:00\",\n        \"updatedAt\": null,\n        \"orderItemDtos\": null,\n        \"customerDto\": null,\n        \"orderStatus\": \"ACTIVE\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/customer/getAllOrdersByCustomerId/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customer/getAllOrdersByCustomerId/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customer",
+						"getAllOrdersByCustomerId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/book/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzdHJpbmciLCJleHAiOjE2NTI4MzkyNTYsImlhdCI6MTY1MjgyMTI1Nn0.iSHAU3LzmQrb1yUDP9HrTc_tPGdaSgiLCg0G0oUQ6pSowFxR1Fl8Oe4l5T6lDqhItAVf2JGYqGXR_EW8XEy1vQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"gazap uzumleri\",\r\n  \"onSale\": true,\r\n  \"price\": 123.39\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/api/book/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"gazap uzumleri\",\r\n  \"onSale\": true,\r\n  \"price\": 123.39\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/book/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 May 2022 18:58:15 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"628d2ac777f075577574d884\",\n    \"createdAt\": \"2022-05-24T18:58:15.662+00:00\",\n    \"updatedAt\": null,\n    \"name\": \"gazap uzumleri\",\n    \"stock\": null,\n    \"onSale\": false,\n    \"price\": 123.39\n}"
+				}
+			]
+		}
+	]
+}
